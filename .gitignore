@@ -21,3 +21,17 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+/.env
+
+/storage/*.key
+/storage/*.log
+/storage/framework/*
+/storage/logs/*
+/bootstrap/cache/*
+.env
+.DS_Store
+*.log
+*.sqlite
+*.zip
+*.tar
+/README.md
