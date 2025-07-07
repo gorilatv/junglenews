@@ -1,6 +1,5 @@
 <?php
 
-
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -24,11 +23,8 @@ use App\Http\Controllers\NoticiaController;
 
 // require __DIR__.'/auth.php';
 
-
-
-
-Route::get('/', [NoticiaController::class, 'index'])->name('home');
-Route::get('/noticia/{id}', [NoticiaController::class, 'show'])->name('noticias.show');
+// Route::get('/', [NoticiaController::class, 'index'])->name('home');
+// Route::get('/noticia/{id}', [NoticiaController::class, 'show'])->name('noticias.show');
 
 
 
@@ -265,37 +261,6 @@ Route::get('/jumanji', function () {
 
     return view('singlepage.main.third.jumanji', compact('article'));
 })->name('jumanji');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Route::get('/', [ArticleController::class, 'index'])->name('home');
